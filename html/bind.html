@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/bind	.css" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="wrap">
+			<div class="hd_banner">
+				<div id="slider" class="mui-slider" >
+				  <div class="mui-slider-group mui-slider-loop">
+				    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				    <div class="mui-slider-item mui-slider-item-duplicate">
+				      <a href="#">
+				        <img src="../images/banner.jpg">
+				      </a>
+				    </div>
+				    <!-- 第一张 -->
+				    <div class="mui-slider-item">
+				      <a href="#">
+				        <img src="../images/banner.jpg">
+				      </a>
+				    </div>
+				    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				    <div class="mui-slider-item mui-slider-item-duplicate">
+				      <a href="#">
+				        <img src="../images/banner.jpg">
+				      </a>
+				    </div>
+				  </div>
+				</div>
+				<div class="bind">
+					账号绑定
+				</div>
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<p>手机号码</p>
+						<div class="con_one">
+							<input type="text" class="inp"/>
+						</div>
+					</li>
+					<li>
+						<p>手机验证码</p>
+						<div class="con_one">
+							<a href="javascript:;" class="hqyzm yzm">获取验证码</a>
+							<input type="text" class="sjyzm"/>
+						</div>
+					</li>
+					<li>
+						<p>密码</p>
+						<div class="con_one">
+							<input type="password" class="inp"/>
+						</div>
+					</li>
+					<li>
+						<p>验证码</p>
+						<div class="con_one">
+							<a href="javascript:;" class="yzm_null yzm"></a>
+							<input type="text" class="yzm_nr"/>
+						</div>
+					</li>
+					<li>
+						<input type="button" value="立即绑定" class="btn"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script>
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
+</html>

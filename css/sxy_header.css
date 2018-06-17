@@ -1,0 +1,97 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+ul li{
+	list-style: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f6f6f6;
+}
+
+a{
+	color: #000;
+}
+.por{
+	position: relative;
+}
+
+.mui-content{
+	overflow: scroll;
+}
+img{
+	 max-width: 100%;
+    vertical-align: middle;
+}
+
+body,html{
+	max-width: 750px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.header {
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 999;
+}
+ .header .mui-segmented-control.mui-scroll-wrapper{
+	height: 44px;
+	position: relative;
+}
+ .header .mui-slider-indicator.mui-segmented-control{
+	width: 80%;
+	height:44px;
+	margin: 0 88px 0 5px;
+}
+ .header .mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+	color:black;
+	border: 0;
+	line-height: 44px;
+	font-size: 14px;
+	padding: 0 4px;
+}
+ .header .mui-segmented-control.mui-segmented-control-inverted .mui-control-item .line{
+	display: inline-block;
+	width: 1px;
+	height: 10px;
+	background-color: #ddd;
+	margin-left: 5px;
+}
+.hd_search{
+	width: 20%;
+	height: 44px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 999;
+}
+.hd_search .hd_s_nr{
+	width: 50%;
+	height: 44px;
+}
+.hd_search .hd_s{
+	display: block;
+	width: auto;
+	height: 44px;
+}
+.hd_search .hd_s_l{
+	background: url(../images/icon-search.png) no-repeat center;
+	-webkit-background-size: 15px 15px;
+	background-size: 15px 15px;
+	margin-left: 6px;
+}
+.hd_search .hd_s_r{
+	background: url(../images/icon-menu.png) no-repeat center;
+	-webkit-background-size: 15px 15px;
+	background-size: 15px 15px;
+	margin-right: 10px;
+}

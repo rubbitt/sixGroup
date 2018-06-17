@@ -1,0 +1,262 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+ul li{
+	list-style: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f6f6f6;
+	box-sizing: border-box;
+}
+a{
+	color: #000;
+}
+.por{
+	position: relative;
+}
+
+.container{
+	width: 100%;
+	height: auto;
+	padding:44px 0 50px 0;
+}
+.container .banner img{
+	z-index: 998;
+}
+.container .user{
+	padding: 10px 0;
+	background-color: #fff;
+	border-bottom: 1px solid #eaeaea;
+}
+.container .user .tx_img img{
+	width: 62px;
+	height: 62px;
+	margin: -20px 15px 0 15px;
+	z-index: 1000;
+}
+.container .user .ziliao {
+	width: auto;
+}
+.container .user .ziliao .zl_t .xxq{
+	font-size: 14px;
+	display: inline-block;
+    background: url(../images/vip-blue.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+    background-size: 14px 14px;
+}
+.container .user .ziliao .zl_t .fs{
+	font-size: 12px;
+	color: #999;
+	margin-left: 15px;
+}
+.container .user .ziliao .zl_b .rzzl{
+	font-size: 12px;
+	color: #999;
+}
+.container .user .td{
+	width: 72px;
+	border-left: 1px solid #eaeaea;
+	padding: 0 0 0 15px;
+}
+.container .user .td a{
+	display: block;
+}
+.container .user .td a img{
+	width: 24px;
+	height: 24px;
+	margin: 5px 10px 0;
+}
+.container .user .td span{
+	font-size: 10px;
+	color: #999;
+}
+
+.btns{
+	width: 100%;
+	padding: 10px 0;
+	background-color: #fff;
+}
+.btns div{
+	width: 50%;
+	float: left;
+}
+.btns div.guanzhu{
+	border-right: 1px solid #eaeaea;
+	position: relative;
+}
+.btns div.guanzhu .clc_btn{
+	background-color: #B6B6B6;
+	border: none;
+	color: #fff;
+	line-height: 24px;
+	position: absolute;
+	left: 35px;
+	top: 0;
+	display: none;
+}
+.btns div a{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	color: #fa655b;
+	width: 117px;
+	height: 24px;
+	border: 1px solid #fa655b;
+	margin: 0 auto;
+	border-radius: 12px;
+	line-height: 24px;
+}
+.btns div a.tw{
+	color: #fff;
+	background: linear-gradient(to right, #f58762 , #fb5b5b 70%, #ff5391);
+}
+
+.content{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+    background: #fff;
+}
+.content .title{
+	padding: 15px;
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+}
+.content .yuyin{
+	background: #f5f5f5;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+    margin: 0 15px;
+    padding: 15px;
+}
+.content .yy_con{
+	width: auto;
+    height: 25px;
+    position: relative;
+    margin-top: 10px;
+}
+.content .yy_con .yy_con_con{
+	width: 133px;
+	height: 25px;
+}
+.content .yy_con .yy_con_con .dj{
+	display: block;
+    width: 133px;
+    height: 25px;
+    background: url(../images/musicbg.png) no-repeat;
+    background-size: 133px 25px;
+    position: relative;
+}
+.content .yy_con .yy_con_con .dj .bf{
+    display: block;
+    width: auto;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-image: url(../images/music.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 12px 12px;
+    padding-left: 10px;
+}
+.content .yy_con .yy_con_con .dj .num{
+	display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding-left: 10px;
+}
+.content .yy_con .tg36{
+	width: auto;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    color: #999;
+}
+.content .txtandimg{
+	font-size: 13px;
+    color: #999999;
+    line-height: 1.6em;
+}
+.content .txtandimg .txt{
+	padding: 15px;
+}
+.content .txtandimg .img img{
+	width: 100%;
+}
+.four{
+	width: auto;
+    height: 34px;
+    padding: 5px 0;
+    background-color: #fff;
+}
+.four ul li{
+	width:25%;
+	height: 24px;
+	float: left;
+}
+.four ul li a{
+	display: block;
+    width: auto;
+    height: 24px;
+    background: url(../images/borgrayr.png) repeat-y right;
+    background-size: 1px 1px;
+    text-align: center;
+}
+.four ul li a div{
+	display: inline-block;
+    width: auto;
+    height: 24px;
+    line-height: 24px;
+    font-size: 10px;
+    color: #999;
+    position: relative;
+    padding-left: 18px;
+    margin: 0;
+}
+.four ul li a div  span{
+	display: block;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    background-image: url(../images/inopera.png);
+    background-repeat: no-repeat;
+    background-size: 48px 24px;
+}
+.four ul li a div  span.ico1{
+    background-position: 0px 0px;	
+}
+.four ul li a div  span.ico2{
+    background-position: -12px 0px;	
+}
+.four ul li a div  span.ico3{
+    background-position: -24px 0px;	
+}
+.four ul li a div  span.ico4{
+    background-position: -36px 0px;	
+}
