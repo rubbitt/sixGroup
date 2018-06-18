@@ -1,18 +1,82 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/search.css" />
 	</head>
-
 	<body>
+		<div class="header">
+			<div class="searchform por border_bottom">
+				<form method="get">
+					<span class="icon poa"></span>
+					<a href="javascript:history.go(-1);" class="back poa">取消</a>
+					<input type="text" placeholder="请输入您想搜索的关键字" class="inp">
+				</form>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="searchItem">
+				<div class="tit pl15"><span class="ico1">热门搜索</span></div>
+				<div class="hot">
+					<ul>
+						<li><a href="javascript:void(0)">主播</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="searchItem">
+				<div class="tit pl15"><span class="ico2">历史搜索</span></div>
+				<div class="history pl15">
+					<ul>
+						<li><a href="javascript:void(0)">网络主播红人</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper nopadbot">
+		    <div class="searchresult-person">
+		        <div class="list border_bottom pl15">
+		            <ul>
+		                <li>
+		                    <div class="item por">
+		                        <div class="img  poa"><img src="../images/finecoursecon-newlist1.jpg"></div>
+		                        <div class="txt"><span>黑泽</span></div>
+		                    </div>
+		                </li>
+		            </ul>
+		        </div>
+		        <div class="more"><a href="#">查看更多</a></div>
+		    </div>
+		    <div class="searchresult-other pl15">
+		        <ul>
+		            <li>
+		                <a href="#" class="item por">
+		                    <div class="img ">
+		                        <span class="play"></span>
+		                        <img src="../images/vipcoursecon-new.jpg">
+		                    </div>
+		                    <div class="con">
+		                        <div class="tit">4亿人口下的“新市民经济”</div>
+		                        <div class="txt">如果你无法简洁的表达你的想法，那只说明你还不够了解它。</div>
+		                        <div class="note">
+		                            <span class="see por"><i></i>6666</span>
+		                            <span class="date">2017年01月25日</span>
+		                        </div>
+		                    </div>
+		                </a>
+		            </li>
+		        </ul>
+		    </div>
+		</div>
+		<div class="searchclear" id="clear"><a href="javascript:void(0)">清除历史记录</a></div>
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
 		</script>
+		<script src="../js/require.js" data-main="../js/search"></script>
 	</body>
 
 </html>
