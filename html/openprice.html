@@ -8,6 +8,7 @@
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/openprice.css" />
 		<link rel="stylesheet" href="../css/base.css" />
+		<script src="../js/jquery-1.7.2.min.js"></script>
 	</head>
 
 	<body>
@@ -17,9 +18,9 @@
 		</script>
 		
 		<span>好好学习</span>
-		<div class="bg"></div>
-		<div class="content">
-			<div class="close"></div>
+		<div class="bg" id="bg"></div>
+		<div class="content" id="content">
+			<div class="close" id="close"></div>
 			<div class="zctx">
 				<div class="zctx_tit">
 					<span>
@@ -72,5 +73,10 @@
 			
 		
 	</body>
-
+	<script>
+		$("#close").click(function(){
+			$("#bg").css("display","none");
+			$("#content").css("display","none");
+		})
+	</script>
 </html>

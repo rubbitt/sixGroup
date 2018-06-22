@@ -1,0 +1,174 @@
+
+.wrap{
+	width:100%;
+}
+html,body{
+	background-color: #fff;
+}
+
+.boxs{
+	padding:44px 0 50px 0;
+	background-color: #fff;
+}
+.list .item{
+	margin-top: 15px;
+}
+.list .item1 .con1{
+    background: #fae6e7;
+}
+.list .item2 .con1{
+    background: #e7f0fb;
+}
+.list .item3 .con1{
+    background: #fdefe2;
+}
+.list .item .con1{
+	width: auto;
+    height: 86px;
+    position: relative;
+}
+.list .item .con1 .con1_l{
+	width: 94px;
+    height: 86px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.list .item .con1 .con1_l .icon{
+	width: 22px;
+    height: auto;
+    font-size: 0;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.list .item .con1 .con1_l .icon img{
+	width: 22px;
+	height: 22px;
+}
+.list .item1 .con1 .con1_l .txt{
+    color: #ca0813;
+}
+.list .item2 .con1 .con1_l .txt{
+    color: #146ed3;
+}
+.list .item3 .con1 .con1_l .txt{
+    color: #f1790e;
+}
+.list .item .con1 .con1_l .txt{
+    font-size: 12px;
+    padding-top: 8px;
+    text-align: center;
+}
+.list .item .con1 .con1_c{
+	width: auto;
+    height: 86px;
+    margin: 0 100px 0 94px;
+    cursor: pointer;
+}
+.list .item .con1 .con1_c .tr{
+	display: table;
+    width: 100%;
+    height: 86px;
+}
+.list .item .con1 .con1_c .tr .td{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+.list .item .con1 .con1_c .tr .td .text{
+	font-size: 14px;
+    color: #333;
+    line-height: 1.4em;
+}
+.list .item .con1 .con1_c .tr .td .text span.no{
+      text-decoration: line-through;
+}
+.list .item .con1 .con1_c .tr .td .xq a{
+	color: #999;
+	font-size: 12px;
+}
+.list .item .con1 .con1_r{
+	width: 66px;
+    height: 42px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -21px;
+}
+.list .item .con1 .con1_r a{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+.list .item .con1 .con1_r a .btn{
+	width: 66px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: #ea9ca1;
+    border-radius: 3px;
+    margin-bottom: 2px;
+}
+.list .item1 .con1 .con1_r a .jq{
+    background-color: #e2777d;
+}
+.list .item2 .con1 .con1_r a .jq{
+	background-color: #7dafe7;
+}
+.list .item3 .con1 .con1_r a .jq{
+	background-color: #f7b478;
+}
+.list .item .con1 .con1_r a .jq{
+	width: 66px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    background-image: url(../images/priceline.png);
+    background-size: 3px 3px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.list .item .con2 {
+	display: none;
+}
+.list .item .con2 ul li{
+	padding-top: 1px;
+}
+.list .item .con2 ul li .box{
+	width:auto;
+	height: auto;
+	background: #f7f7f7;
+    position: relative;
+    padding: 0 15px 0 94px;
+}
+.list .item .con2 ul li .box .img{
+	width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    margin-top: -12px;
+}
+.list .item .con2 ul li .box .img img{
+	width:24px;
+	height: 24px;
+}
+.list .item .con2 ul li .box .con .tr{
+	display: table;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 7px 0;
+}
+.list .item .con2 ul li .box .con .tr .td{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    line-height: 18px;
+}
