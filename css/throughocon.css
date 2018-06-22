@@ -1,0 +1,133 @@
+.smt{
+	margin-top: 139px !important;
+}
+.start{
+	width:auto;
+	height:auto;
+	background-color: #fff;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item>i {
+    display: block;
+    width: 1px;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    background: #ddd;
+    position: absolute;
+    top: 15px;
+    left: 75px!important;}
+   .mui-segmented-control.mui-scroll-wrapper .mui-active>i {
+    left: 90px!important;}
+.title{
+	width:auto;
+	height: auto;
+	padding:20px 15px 0 15px;
+	font-size:18px;
+	color:#333;
+	text-align: center;
+	font-weight: bold;
+}
+.china{
+	width:auto;
+	height: auto;
+	background:url(../images/icon-intro.png) no-repeat;
+	background-size: 17px 13px;
+	padding:10px 15px 10px 45px;
+	margin:15px 15px 0px 15px;
+	border-radius:5px;
+	background-color: #eee;
+	color:#666;
+	background-position: 15px 15px;
+	font-size:12px;
+	line-height: 1.6rem;
+	
+}
+.true_content{
+	width: auto;
+    height: auto;
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.6em;
+}
+p.cant{
+	padding:15px;
+	text-justify: justify;
+}
+.watch{
+	width: auto;
+    height: auto;
+    line-height: 0;
+}
+.watch a{
+	display: block;
+	width: auto;
+    height: auto;
+}
+.watch a span.icon{
+	width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    margin-left: -20px;
+    margin-top: -20px;
+    background: url(../images/video-play.png) no-repeat;
+    background-size: 40px 40px;
+    z-index: 2;
+}
+.small_logo{
+	width: auto;
+    height: 34px;
+    padding: 5px 0;
+}
+.small_logo ul li {
+	width: 25%;
+    height: 24px;
+    float: left;
+}
+.small_logo ul li a{
+	display: block;
+    width: auto;
+    height: 24px;
+    background: url(../images/borgrayr.png) repeat-y right;
+    background-size: 1px 1px;
+    text-align: center;
+    font-size: 0;
+}
+.small_logo ul li a .item{
+	display: inline-block;
+    width: auto;
+    height: 24px;
+    line-height: 24px;
+    font-size: 10px;
+    color: #999;
+    position: relative;
+    padding-left: 18px;
+    margin: 0;
+}
+.small_logo ul li a .item span.iconn{
+	display: block;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    background-image: url(../images/inopera.png);
+    background-repeat: no-repeat;
+    background-size: 48px 24px;
+
+}
+.star{
+	    background-position: -12px 0px !important;
+}
+.nice{
+	background-position: -24px 0px !important;
+}
+.share{
+	background-position: -36px 0px !important;
+}
+
+

@@ -1,0 +1,190 @@
+.private{
+	padding:44px 0 50px 0;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item>i {
+    display: block;
+    width: 1px;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    background: #ddd;
+    position: absolute;
+    top: 15px;
+    left: 83px!important;}
+   .mui-segmented-control.mui-scroll-wrapper .mui-active>i {
+    left: 90px!important;}
+.img{
+	width:auto;
+	height:auto;
+}
+.img img{
+	width:100%;
+}
+.future{
+	width:auto;
+	height: auto;
+	padding:15px;
+	background-color: #fff;
+	font-size:13px;
+	color:#999999;
+	line-height:1.6em;
+}
+.am{
+	margin-top: 10px;
+	background-color: #fff;
+	width:auto;
+	height: auto;
+}
+.title{
+	width:auto;
+	height:auto;
+	padding:15px 0 5px 0;
+	line-height:0px;
+}
+.in_title{
+	width:auto;
+	height:14px;
+	border-left:2px solid #f54744;
+	padding-left:13px;
+	
+}
+.in_title .want{
+	display:inline-block;
+	width:auto;
+	height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #333;
+    background: url(../images/inmore.png) no-repeat right center;
+    padding-right: 15px;
+    background-size: 5px 10px;
+}
+.bottom_all{
+	width:auto;
+	height:auto;
+	padding:8px 15px;
+	border-bottom: 1px dotted #ddd;
+}
+.bottom_all ul.list li{
+	 width:auto;
+	height:auto;
+	padding:7px 0px;
+	
+}
+.bottom_all ul.list li .namee{
+	width:auto;
+	height:auto;
+	position: relative;
+	min-height:30px;
+	padding-left:90px!important;
+}
+.bottom_all ul.list li .Myname{
+	width:auto;
+	height:30px !important;
+	line-height:30px;
+	font-size:12px;
+	color:#333;
+	position: absolute;
+	top:0px;
+	left:0px;
+	
+} 
+.bottom_all ul.list li .namee .input_name{
+	width:auto;
+	height:30px;
+	position: relative;
+}
+.bottom_all ul.list li .namee .input_name .bubbles{
+	display: block;
+	width:100%;
+	height: 30px !important;
+	border:1px solid #ddd;
+	border-radius:3px;
+	font-size:12px;
+	padding:7px 10px;
+	
+}
+span.date{
+	display: block;
+	width:20px;
+	height:20px;
+	position: absolute;
+	right:5px;
+	top:50%;
+	background: url(../images/icon-calendar.png) no-repeat center;
+	background-size: 20px 20px;
+	margin-top:-10px;
+}
+.texta{
+	width:auto!important;
+	height:auto !important;
+}
+textarea{
+	display: block;
+	width:100%;
+	height:64px;
+	border:1px solid #ddd;
+	border-radius:3px;
+	font-size: 12px;
+	color:#333;
+	padding:9px 9px;
+}
+.mb{
+	margin-bottom:50px!important;
+}
+.mui-fullscreen{
+	position:static;
+}
+.up{
+	background-color: #fff;
+}
+.in_up{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	padding:8px;	
+}
+.up_file{
+	position: relative;
+	width:33.3%;
+	height:auto;
+	float: left;
+	padding:7px
+}
+.upp{
+	width:100%;
+}
+.filee{
+	opacity: 0;
+	position: absolute;
+	top:7px;
+	left:7px;
+	right:7px;
+	bottom:7px;
+	z-index:100;
+}
+.warn{
+	width:auto;
+	height:auto;
+	padding:0 15px;
+	font-size:14px;
+	color:#999;
+}
+.submit{
+	width: auto;
+    height: auto;
+    padding: 30px 0;
+    background-color: #fff;
+}
+.sub{
+	display: block;
+	width:160px !important;
+	height:32px!important;
+	text-align: center!important;
+	font-size:15px!important;
+	color:#fff!important;
+	background-color: #f54744 !important;
+	border-radius:3px!important;
+	margin:0 24%!important;
+	border:0px;
+}

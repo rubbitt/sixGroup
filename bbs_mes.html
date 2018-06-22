@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/bbscon.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<!-- 主界面不动、菜单移动 -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+	  <!-- 菜单容器 -->
+	 
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav fix">
+	    		<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-pull-left success">
+			    <div class="mui-scroll">
+			        <a class="mui-control-item" href="bbs_look.html">
+			            网络商业
+			            <i></i>
+			            <b></b>
+			        </a>
+			      
+			        <a class="mui-control-item out long" href="bbs_look.html">
+			          时尚造型
+			           <i></i> 
+			           <b></b>
+			        </a>
+			        <a class="mui-control-item out long" href="bbs_look.html">
+			           	情感大师
+			            <i></i>
+			            <b></b>
+			        </a>
+			        <a class="mui-control-item out long" href="bbs_look.html">
+			           星座运势
+			            <i></i>
+			            <b></b>
+			        </a>
+			        <a class="mui-control-item five best mui-active" href="bbs_look.html">
+			           留言板
+			            <i></i>
+			            <b></b>
+			        </a>
+			     
+			   
+			    </div>
+		</div>
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right same normal" href="#offCanvasSide"></a>
+	      <a href="bbs_look.html" class="mui-icon mui-icon-search mui-pull-right search same"></a>
+	    </header>
+	    <nav class="mui-bar mui-bar-tab bgc">
+		    <a class="mui-tab-item" href="bbs_look.html">
+		        <span class="mui-icon home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item" href="bbs_look.html">
+		        <span class="mui-icon study"></span>
+		        <span class="mui-tab-label">学堂</span>
+		    </a>
+		    <a class="mui-tab-item" href="bbs_look.html">
+		        <span class="mui-icon register"></span>
+		        <span class="mui-tab-label">注册</span>
+		    </a>
+		    <a class="mui-tab-item mui-active" href="bbs_look.html">
+		        <span class="mui-icon quest"></span>
+		        <span class="mui-tab-label">问答</span>
+		    </a>
+		    <a class="mui-tab-item" href="bbs_look.html">
+		        <span class="mui-icon my"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+	    <div class="mui-content mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	        <!-- 主界面具体展示内容 -->
+	        	<div id="slider" class="mui-slider" >
+	        	  <div class="mui-slider-group mui-slider-loop">
+	        	    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	        	    <div class="mui-slider-item mui-slider-item-duplicate">
+	        	      <a href="bbs_look.html">
+	        	        <img src="http://zekun.test6.tisapi.com/redp/images/banner.jpg">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 第一张 -->
+	        	    <div class="mui-slider-item">
+	        	      <a href="bbs_look.html">
+	        	        <img src="http://zekun.test6.tisapi.com/redp/images/banner.jpg">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 第二张 -->
+	        	    <div class="mui-slider-item">
+	        	      <a href="bbs_look.html">
+	        	        <img src="http://zekun.test6.tisapi.com/redp/images/banner.jpg">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 第三张 -->
+	        	    <div class="mui-slider-item">
+	        	      <a href="bbs_look.html">
+	        	        <img src="http://zekun.test6.tisapi.com/redp/images/banner.jpg">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 第四张 -->
+	        	    <div class="mui-slider-item">
+	        	      <a href="bbs_look.html">
+	        	        <img src="http://placehold.it/400x300">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	        	    <div class="mui-slider-item mui-slider-item-duplicate">
+	        	      <a href="bbs_look.html">
+	        	        <img src="http://placehold.it/400x300">
+	        	      </a>
+	        	    </div>
+	        	  </div>
+	        	</div>
+	    		<div class="topic">
+				<div class="in_topic">
+					<a href="">发起话题</a>
+				</div>
+		</div>
+	  		<div class="bottom_all">
+	  			<div class="all_tab">
+	  				<ul>
+	  					<li>
+	  						<a href="bbs_look.html" class='normal'>最新答主</a>
+	  					</li>
+	  					<li>
+	  						<a href="bbs_look.html">最热答主</a>
+	  					</li>
+	  					<li>
+	  						<a href="bbs_look.html">
+		  						<span class="filter">
+		  							筛选
+		  						</span>
+	  						</a>
+	  					</li>
+	  				</ul>
+	  			</div>
+	  			<div class="request">
+	  				<div class="one_peo">
+	  					<div class="program">
+	  						<div class="menmen">
+	  							<div class="left">
+	  								<a href="bbs_look.html">
+	  									<img src="images/bbslist-portrait2.jpg" alt="" class="zha" />
+	  								</a>
+	  								<p class="namee">张萌萌的提问</p>
+	  							</div>			
+	  							<div class="right">
+	  								<div class="bang">
+	  									<a href="bbs_look.html">
+	  										<i></i>
+	  										20
+	  									</a>
+	  								</div>
+	  								<div class="other">
+	  									<div class="icon">
+	  										<a href="javascript:;"></a>
+	  									</div>
+	  									<div class="btns">
+	  										<i></i>
+	  										<ul>
+	  											<li>
+	  												<a href="bbs_look.html">删除</a>
+	  											</li>
+	  											<li>
+	  												<a href="bbs_look.html" class="red">举报</a>
+	  											</li>
+	  										</ul>
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="google">
+	  							Google play审核能过不？
+	  						</div>
+	  						<div class="huif">
+	  							<a href="bbs_look.html">回复</a>
+	  						</div>
+	  					</div>
+	  					<div class="program">
+	  						<div class="menmen">
+	  								<div class="left">
+		  								<a href="bbs_look.html">
+		  									<img src="images/bbslist-portrait1.jpg" alt="" class="zha" />
+		  								</a>
+	  									<p class="namee">程茂源的回答</p>
+	  								</div>			
+	  							</div>
+	  							<div class="google click">
+	  								<div class="listen">
+	  										<a href="javascript:	void(0)" style="width:80%" class='cicic'>	
+	  											<span class="play">点击播放</span>
+	  											<span class="play" style="display:none;background-image:url(images/music.gif);">点击播放</span>
+	  											<span class="secounds">22</span>
+	  										</a>
+	  								</div>
+	  								<div class="already">
+	  									听过36
+	  								</div>
+	  						</div>
+	  						
+	  					</div>
+	  					
+	  				</div>
+	  				<div class="one_peo ">
+	  					<div class="program">
+	  						<div class="menmen">
+	  							<div class="left">
+	  								<a href="bbs_look.html">
+	  									<img src="images/bbslist-portrait3.jpg" alt="" class="zha" />
+	  								</a>
+	  								<p class="namee">赵四的提问</p>
+	  							</div>			
+	  							<div class="right">
+	  								<div class="bang">
+	  									<a href="bbs_look.html">
+	  										<i></i>
+	  										20
+	  									</a>
+	  								</div>
+	  								<div class="other">
+	  									<div class="icon">
+	  										<a href="javascript:;"></a>
+	  									</div>
+	  									<div class="btns">
+	  										<i></i>
+	  										<ul>
+	  											<li>
+	  												<a href="bbs_look.html">删除</a>
+	  											</li>
+	  											<li>
+	  												<a href="bbs_look.html" class="red">举报</a>
+	  											</li>
+	  										</ul>
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="google">
+	  							社交就该做社交的事，钱包就该做钱包的事！支付宝能不能简化成只有支付功能？
+	  						</div>
+	  						<div class="huif">
+	  							<a href="bbs_look.html">回复</a>
+	  						</div>
+	  					</div>
+	  					<div class="program">
+	  						<div class="menmen">
+	  								<div class="left">
+		  								<a href="bbs_look.html">
+		  									<img src="images/bbslist-portrait1.jpg" alt="" class="zha" />
+		  								</a>
+	  									<p class="namee">程茂源的回答</p>
+	  								</div>			
+	  							</div>
+	  							<div class="google click text_normal">
+	  								大数据（Big Data）爆炸成长成为机器学习的养分。机器学习能获得充分的训练数据（training data）
+	  								 与计算效能。人工智能产业（Artificial Intelligence，AI）经过一甲子的起落，终于因技术条件到位，开始突飞猛进。但是
+	  								，单纯掌握某种数据，不能实现功能上的联动和数据共享，这种信息孤岛现象会成为人工智能发挥的最大阻碍。
+	  						</div>
+	  						
+	  					</div>
+	  					
+	  				</div>
+	  				<div class="one_peo mb">
+	  					<div class="program">
+	  						<div class="menmen">
+	  							<div class="left">
+	  								<a href="bbs_look.html">
+	  									<img src="images/bbslist-portrait2.jpg" alt="" class="zha" />
+	  								</a>
+	  								<p class="namee">张萌萌的提问</p>
+	  							</div>			
+	  							<div class="right">
+	  								<div class="bang">
+	  									<a href="bbs_look.html">
+	  										<i></i>
+	  										20
+	  									</a>
+	  								</div>
+	  								<div class="other">
+	  									<div class="icon">
+	  										<a href="javascript:;"></a>
+	  									</div>
+	  									<div class="btns">
+	  										<i></i>
+	  										<ul>
+	  											<li>
+	  												<a href="bbs_look.html">删除</a>
+	  											</li>
+	  											<li>
+	  												<a href="bbs_look.html" class="red">举报</a>
+	  											</li>
+	  										</ul>
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="google">
+	  							Google play审核能过不？
+	  						</div>
+	  						<div class="huif">
+	  							<a href="bbs_look.html">回复</a>
+	  						</div>
+	  					</div>
+	  					<div class="program">
+	  						<div class="menmen">
+	  								<div class="left">
+		  								<a href="bbs_look.html">
+		  									<img src="images/bbslist-portrait1.jpg" alt="" class="zha" />
+		  								</a>
+	  									<p class="namee">程茂源的回答</p>
+	  								</div>			
+	  							</div>
+	  							<div class="google click">
+	  								<div class="listen">
+	  										<a href="javascript:	void(0)" style="width:80%" class='cicic'>	
+	  											<span class="play">点击播放</span>
+	  											<span class="play" style="display:none;background-image:url(images/music.gif);">点击播放</span>
+	  											<span class="secounds">22</span>
+	  										</a>
+	  								</div>
+	  								<div class="already">
+	  									听过36
+	  								</div>
+	  						</div>
+	  						
+	  					</div>
+	  					
+	  				</div>
+
+
+	  			</div>
+	  		
+	  		
+	  		</div>
+	      
+	      
+	      
+	      </div>
+	</div>
+		
+		
+		
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/click.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <style type="text/css">
+    		.phbind-head {
+	width: 100%;
+	height: 44px;
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+
+.phbind-head .back {
+	display: block;
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url("images/icon-back-white.png") no-repeat center;
+	-webkit-background-size: 30% auto;
+	background-size: 30% auto;
+}
+
+	display: block;
+	width: auto;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+
+.phbind-main {
+	width: auto;
+	height: auto;
+	padding-top: 44px;
+}
+
+.phbind-logo {
+	width: auto;
+	height: auto;
+	font-size: 0;
+	text-align: center;
+	padding: 60px 30px;
+}
+
+.phbind-logo img {
+	max-width: 210px;
+}
+
+.phbind-form {
+	width: auto;
+	height: auto;
+	padding: 0 40px;
+}
+
+.phbind-form .item {
+	width: auto;
+	height: auto;
+	position: relative;
+	margin-bottom: 14px;
+}
+
+.phbind-form .item .icon {
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	font-size: 0;
+}
+
+.phbind-form .item .icon img {
+	width: 52px;
+	height: 52px;
+}
+
+.phbind-form .item .inps {
+	width: auto;
+	height: auto;
+	font-size: 0;
+	padding: 1px;
+	border-radius: 6px;
+	
+}
+
+.phbind-form .item .inps input {
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	border-radius: 5px;
+	border: 0 none;
+	font-size: 12px;
+	color: #919191;
+	line-height: 16px;
+	padding: 17px 10px 17px 52px;
+}
+
+.phbind-form .item .inps input.inp2 {
+	padding-right: 130px;
+}
+
+.phbind-form .item .obtain {
+	display: block;
+	width: 110px;
+	height: 34px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -17px;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 34px;
+	
+}
+
+.phbind-form .item .obtainWait {
+	background: #ccc;
+}
+
+.phbind-form .item input.btn {
+	display: block;
+	width: 100%;
+	height: 52px;
+	border: 0 none;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 20px;
+	background: -webkit-linear-gradient(left, #f7875d , #ff4f90);
+ 
+}
+
+.phbind-form .item .note {
+	width: auto;
+	height: auto;
+	font-size: 12px;
+	color: #919191;
+}
+
+.phbind-form .item .note a {
+	color: #919191;
+    </style>
+    <style>
+    		
+    	
+    </style>
+    <script src="js/mui.min.js"></script>
+    <link href="css/bbsasbokok.css" rel="stylesheet"/>
+    <link href="css/bbsreplay.css" rel="stylesheet"/>
+    
+</head>
+<body>
+	<div class="phbind-head">
+	    <a href="javascript:history.go(-1);" class="back"></a>
+	    <span class="name">绑定手机号</span>
+	</div>
+	<div class="phbind-main">
+	    <div class="phbind-logo"><img src="images/phbind-logo.png"></div>
+	    <div class="phbind-form">
+	        <div class="item">
+	            <span class="icon"><img src="images/phbind-form1.png"></span>
+	            <div class="inps"><input type="text" placeholder="手机号码" class="inp1"></div>
+	        </div>
+	        <div class="item">
+	            <span class="icon"><img src="images/phbind-form2.png"></span>
+	            <div class="inps"><input type="text" placeholder="短信验证码" class="inp2"></div>
+	            <a href="javascript:void(0)" class="obtain">获取验证码</a>
+	            <!--<a href="javascript:void(0)" class="obtain obtainWait">30秒后重新获取</a>-->
+	        </div>
+	        <div class="item">
+	            <input type="button" value="确定" class="btn">
+	        </div>
+	        <div class="item">
+	            <div class="note">注册即表示您同意<a href="#">《红人学堂服务协议》</a></div>
+	        </div>
+	    </div>
+	</div>
+
+	
+
+
+</body>
+</html>

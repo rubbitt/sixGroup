@@ -1,0 +1,85 @@
+.cancat{
+	margin-top:139px;
+	width:auto;
+	height: auto;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item>i {
+    display: block;
+    width: 1px;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    background: #ddd;
+    position: absolute;
+    top: 15px;
+    left: 75px!important;}
+   .mui-segmented-control.mui-scroll-wrapper .mui-active>i {
+    left: 90px!important;}
+.cancat .our{
+	margin-bottom:5px;
+}
+.we{
+	width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 0;
+    background: url(../images/borgrayb.png) repeat-x bottom #fff;
+    background-size: 1px 1px;
+}
+.list{
+	width: auto;
+    height: auto;
+}
+.list .list_one{
+	width: auto;
+    height: auto;
+    background: #fff;
+    margin-bottom: 5px;
+    padding: 0 15px;
+}
+.list .list_one ul li{
+	width: auto;
+    height: auto;
+    background: url(../images/borgrayb.png) repeat-x bottom #fff;
+    background-size: 1px 1px;
+}
+.list .list_one ul li .box{
+	width: auto;
+    height: 44px;
+    position: relative;
+    padding-left: 25px;
+}
+.list .list_one ul li .box .icon{
+	width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    font-size: 0;
+}
+.list .list_one ul li .box .icon img{
+	width: 18px;
+    height: 18px;
+}
+.cop{
+	width: auto;
+    height: 44px;
+    line-height: 44px;
+    font-size: 12px;
+    color: #333;
+}
+.number{
+	width: auto;
+    height: 44px;
+    line-height: 44px;
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+

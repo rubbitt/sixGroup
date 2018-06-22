@@ -1,0 +1,43 @@
+.input{
+	width:auto;
+	height:auto;
+	position:relative;	
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item>i {
+    display: block;
+    width: 1px;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    background: #ddd;
+    position: absolute;
+    top: 15px;
+    left: 75px!important;}
+   .mui-segmented-control.mui-scroll-wrapper .mui-active>i {
+    left: 90px!important;}
+.people_reque .pay_succ{
+	padding:10px 0 !important;
+}
+.place{
+	display: block;
+	width:100% !important;
+	height:44px !important;
+	line-height:44px !important;
+	border-radius:5px !important;
+	border:1px solid #ddd !important;
+	background-color: #f9f9f9 !important;
+	padding:13px 54px 13px 10px!important;
+	color:#333;
+	font-size:14px;
+}
+.listen{
+	display: block;
+	width:44px;
+	height:44px;
+	background: url(../images/icon-voice.png) no-repeat center;
+	background-size: 16px 16px;
+	z-index: 2;
+	position: absolute;
+	top:0;
+	right:0;
+}

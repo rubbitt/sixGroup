@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <style>
+    		.withdraw {
+	padding: 25px 15px;
+	width: auto;
+	height: auto
+}
+
+.withdraw-head {
+	overflow: hidden;
+	padding: 9pt 0;
+	width: auto;
+	height: auto;
+	background: #fbf8f8
+}
+
+.withdraw-head .item {
+	float: left;
+	padding: 15px 0;
+	width: 50%;
+	height: auto;
+	border-right: 1px solid #ddd
+}
+
+.withdraw-head .item:last-child {
+	border: 0 none
+}
+
+.withdraw-head .item span {
+	display: block;
+	width: auto;
+	height: auto;
+	color: #000;
+	text-align: center;
+	font-weight: 700;
+	font-size: 13px
+}
+
+.withdraw-head .item span.num {
+	padding-top: 10px
+}
+
+.withdraw-foot {
+	padding: 0 25px 25px;
+	width: auto;
+	height: auto;
+	background: #fff
+}
+
+.withdraw-tit {
+	padding-top: 10px;
+	width: auto;
+	height: auto;
+	color: #000;
+	font-weight: 700;
+	font-size: 13px
+}
+
+.withdraw-inp {
+	position: relative;
+	margin-top: 5px;
+	width: auto;
+	height: auto;
+	border-bottom: 1px solid #ddd
+}
+
+.withdraw-inp span.unit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: auto;
+	height: 50px;
+	color: #000;
+	font-size: 26px;
+	line-height: 50px
+}
+
+.withdraw-inp input.inp {
+	display: block;
+	padding: 9pt 0 9pt 30px;
+	width: 100%;
+	height: 50px;
+	border: 0 none;
+	background: 0 0;
+	font-size: 26px;
+	line-height: 26px
+}
+
+.withdraw-note {
+	padding: 15px 0;
+	width: auto;
+	height: auto;
+	color: #000;
+	font-weight: 700;
+	font-size: 13px
+}
+
+.withdraw-note span {
+	color: #fc6857;
+	font-weight: 700
+}
+
+.withdraw-btn {
+	width: auto;
+	height: auto
+}
+
+.withdraw-btn input.btn {
+	display: block;
+	width: 100%;
+	height: 44px;
+	border: 0 none;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(left,#f7875d,#ff4f90);
+	background: linear-gradient(to right,#f7875d,#ff4f90);
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 44px
+}
+
+    	
+    </style>
+    <script src="js/mui.min.js"></script>
+    <link href="css/bbsasbokok.css" rel="stylesheet"/>
+    <link href="css/bbsreplay.css" rel="stylesheet"/>
+    
+</head>
+<body>
+	<div class="withdraw">
+    <div class="withdraw-head">
+        <div class="item">
+            <span class="name">当前糖豆数</span>
+            <span class="num">2888豆</span>
+        </div>
+        <div class="item">
+            <span class="name">可提现金额</span>
+            <span class="num">200元</span>
+        </div>
+    </div>
+    <div class="withdraw-foot">
+        <div class="withdraw-tit">输入金额</div>
+        <div class="withdraw-inp">
+            <span class="unit">￥</span>
+            <input type="text" class="inp">
+        </div>
+        <div class="withdraw-note">提示：<span>糖豆满2000以上可提现</span></div>
+        <div class="withdraw-btn"><input type="button" value="提现" class="btn"></div>
+    </div>
+</div>
+</body>
+</html>

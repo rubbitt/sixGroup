@@ -1,16 +1,1335 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="../js/jquery-1.7.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
 </head>
 <body>
-<script>
-    console.log("aa")
-    $.get("http://web.95ym.cn",function (data) {
-        console.log(data)
-    })
-</script>
+	<!-- 主界面不动、菜单移动 -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+	  <!-- 菜单容器 -->
+	  
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav fix">
+	    		<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-pull-left success">
+			    <div class="mui-scroll">
+			        <a class="mui-control-item">
+			            资讯
+			            <i></i>
+			            <b></b>
+			        </a>
+			      
+			        <a class="mui-control-item out long">
+			          学堂出品
+			           <i></i> 
+			           <b></b>
+			        </a>
+			        <a class="mui-control-item out long">
+			           红人黄页
+			            <i></i>
+			            <b></b>
+			        </a>
+			        <a class="mui-control-item out long">
+			           案例分析
+			            <i></i>
+			            <b></b>
+			        </a>
+			        <a class="mui-control-item five best">
+			           红人直通车
+			            <i></i>
+			            <b></b>
+			        </a>
+			        <a class="mui-control-item out long">
+			            红人通告
+			             <i></i>
+			             <b></b>
+			        </a>
+			         <a class="mui-control-item out long">
+			            书籍推荐
+			             <i></i>
+			             <b></b>
+			        </a>
+			         <a class="mui-control-item out long">
+			            学堂成果
+			             <i></i>
+			             <b></b>
+			        </a>
+			         <a class="mui-control-item">
+			            众筹
+			            <i></i>
+			            <b></b>
+			        </a>
+			        <a class="mui-control-item center">
+			            人气榜
+			            <b></b>
+			        </a>
+			    </div>
+		</div>
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right same normal " href="#offCanvasSide"></a>
+	      <a href="" class="mui-icon mui-icon-search mui-pull-right search same"></a>
+	    </header>
+	    <nav class="mui-bar mui-bar-tab bgc">
+		    <a class="mui-tab-item mui-active">
+		        <span class="mui-icon home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon study"></span>
+		        <span class="mui-tab-label">学堂</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon register"></span>
+		        <span class="mui-tab-label">注册</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon quest"></span>
+		        <span class="mui-tab-label">问答</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon my"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+	    <div class="mui-content mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	        <!-- 主界面具体展示内容 -->
+	        	<div id="slider" class="mui-slider" >
+	        	  <div class="mui-slider-group mui-slider-loop">
+	        	    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	        	    <div class="mui-slider-item mui-slider-item-duplicate">
+	        	      <a href="#">
+	        	        <img src="http://zekun.test6.tisapi.com/redp/images/banner.jpg">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 第一张 -->
+	        	    <div class="mui-slider-item">
+	        	      <a href="#">
+	        	        <img src="http://zekun.test6.tisapi.com/redp/images/banner.jpg">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 第二张 -->
+	        	    <div class="mui-slider-item">
+	        	      <a href="#">
+	        	        <img src="http://zekun.test6.tisapi.com/redp/images/banner.jpg">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 第三张 -->
+	        	    <div class="mui-slider-item">
+	        	      <a href="#">
+	        	        <img src="http://zekun.test6.tisapi.com/redp/images/banner.jpg">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 第四张 -->
+	        	    <div class="mui-slider-item">
+	        	      <a href="#">
+	        	        <img src="http://placehold.it/400x300">
+	        	      </a>
+	        	    </div>
+	        	    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	        	    <div class="mui-slider-item mui-slider-item-duplicate">
+	        	      <a href="#">
+	        	        <img src="http://placehold.it/400x300">
+	        	      </a>
+	        	    </div>
+	        	  </div>
+	        	  <!--<div class="mui-slider-indicator">
+	        	    <div class="mui-indicator mui-active"></div>
+	        	    <div class="mui-indicator"></div>
+	        	    <div class="mui-indicator"></div>
+	        	    <div class="mui-indicator"></div>
+	        	  </div>-->
+	        	</div>
+				<div class="show">
+					<div class="display">
+						推荐
+					</div>
+					<div class="list">
+						<ul class="bea">
+							<li>
+								<a href="">
+									<span class="icon">
+										<img src="http://zekun.test6.tisapi.com/redp/images/inrecom1.png" alt="" />
+									</span>
+									<span class="text">红人学堂</span>
+									
+								</a>
+								
+							</li>
+							<li>
+								<a href="">
+									<span class="icon">
+										<img src="http://zekun.test6.tisapi.com/redp/images/inrecom2.png" alt="" />
+									</span>
+									<span class="text">学堂出品</span>
+									
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon">
+										<img src="http://zekun.test6.tisapi.com/redp/images/inrecom2.png" alt="" />
+									</span>
+									<span class="text">问答社区</span>
+									
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon">
+										<img src="http://zekun.test6.tisapi.com/redp/images/inrecom4.png" alt="" />
+									</span>
+									<span class="text">天天福利</span>
+									
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon">
+										<img src="http://zekun.test6.tisapi.com/redp/images/inrecom5.png" alt="" />
+									</span>
+									<span class="text">招生简章</span>
+									
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon">
+										<img src="http://zekun.test6.tisapi.com/redp/images/inrecom6.png" alt="" />
+									</span>
+									<span class="text">红人直通车</span>
+									
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon">
+										<img src="http://zekun.test6.tisapi.com/redp/images/inrecom7.png" alt="" />
+									</span>
+									<span class="text">书籍推荐</span>
+									
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon">
+										<img src="http://zekun.test6.tisapi.com/redp/images/inrecom8.png" alt="" />
+									</span>
+									<span class="text">线下课程</span>
+									
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="dance">
+					<div class="title">
+						资讯
+						<a href="" class="more"></a>
+					</div>
+					<div class="three">
+						<div class="one">
+							<a href="">LET ME LOVE YOU 成品舞分解教学</a>
+						</div>
+						<div class="two">
+							<a href="">
+								<img src="http://zekun.test6.tisapi.com/redp/images/innews-hot.jpg" alt="" />
+							</a>
+						</div>
+						<div class="last">
+							<ul class="four">
+								<li>
+									<a href="javascript:;">
+										<div class="bet">
+											<span class="clock">
+												
+											</span>
+											666
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<div class="bet">
+											<span class="clock1">
+												
+											</span>
+											300
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<div class="bet">
+											<span class="clock2">
+												
+											</span>
+											5000
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<div class="bet">
+											<span class="clock3">
+												
+											</span>
+											分享
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="swiper">
+					<div class="mui-scroll-wrapper cici mui-slider-indicator mui-segmented-control mui-segmented-control-inverted paddingg">
+					    <div class="mui-scroll">
+					        <div class="mui-control-item ml">
+					           
+					            <div class="pic1">
+					            		<a href="">
+					            			<div class="imgg">
+					            				<img src="http://zekun.test6.tisapi.com/redp/images/innews-list1.jpg" alt="" />
+					            			</div>
+					            			<div class="desc">
+					            				Hamilton Evans New Rules
+					            			</div>
+					            			<div class="teach">
+					            				舞蹈教程
+					            			</div>
+					            		</a>
+					            </div>
+					        </div>
+					        <div class="mui-control-item ml">
+					         	<div class="pic1">
+					         		<a href="">
+					            			<div class="imgg">
+					            				<img src="http://zekun.test6.tisapi.com/redp/images/innews-list2.jpg" alt="" />
+					            			</div>
+					            			<div class="desc">
+					            				LET ME LOVE YOU 成品舞分解教学
+					            			</div>
+					            			<div class="teach">
+					            				舞蹈教程
+					            			</div>
+					            		</a>
+					         	</div>
+					        </div>
+					        <div class="mui-control-item ml">
+					         	<div class="pic1">
+					         		<a href="">
+					            			<div class="imgg">
+					            				<img src="http://zekun.test6.tisapi.com/redp/images/innews-list3.jpg" alt="" />
+					            			</div>
+					            			<div class="desc">
+					            				Bad Liar - Selena Gomez 成品舞分解教学
+					            			</div>
+					            			<div class="teach">
+					            				舞蹈教程
+					            			</div>
+					            		</a>
+					         	</div>
+					        </div>
+					        
+					    </div>
+					</div>
+				</div>
+			    <div id="slider" class="mui-slider mtb" >
+			        <div class="mui-slider-group mui-slider-loop">
+			          <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			          <div class="mui-slider-item mui-slider-item-duplicate bigm">
+			           	<div class="dance mb">
+							<div class="title">
+								资讯
+								<a href="" class="more"></a>
+							</div>
+							<div class="three">
+								<div class="one">
+									<a href="">LET ME LOVE YOU 成品舞分解教学</a>
+								</div>
+								<div class="two">
+									<a href="">
+										<img src="http://zekun.test6.tisapi.com/redp/images/incourse-img.jpg" alt="" />
+									</a>
+								</div>
+								<div class="last">
+									<ul class="four">
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock">
+														
+													</span>
+													666
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock1">
+														
+													</span>
+													300
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock2">
+														
+													</span>
+													5000
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock3">
+														
+													</span>
+													分享
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+			          </div>
+			          <!-- 第一张 -->
+			          <div class="mui-slider-item bigm">
+			            <div class="dance mb">
+							<div class="title">
+								资讯
+								<a href="" class="more"></a>
+							</div>
+							<div class="three">
+								<div class="one">
+									<a href="">LET ME LOVE YOU 成品舞分解教学</a>
+								</div>
+								<div class="two">
+									<a href="">
+										<img src="http://zekun.test6.tisapi.com/redp/images/incourse-img.jpg" alt="" />
+									</a>
+								</div>
+								<div class="last">
+									<ul class="four">
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock">
+														
+													</span>
+													666
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock1">
+														
+													</span>
+													300
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock2">
+														
+													</span>
+													5000
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock3">
+														
+													</span>
+													分享
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+			          </div>
+			          <!-- 第二张 -->
+			          <div class="mui-slider-item bigm">
+			            	<div class="dance mb">
+							<div class="title">
+								资讯
+								<a href="" class="more"></a>
+							</div>
+							<div class="three">
+								<div class="one">
+									<a href="">LET ME LOVE YOU 成品舞分解教学</a>
+								</div>
+								<div class="two">
+									<a href="">
+										<img src="http://zekun.test6.tisapi.com/redp/images/incourse-img.jpg" alt="" />
+									</a>
+								</div>
+								<div class="last">
+									<ul class="four">
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock">
+														
+													</span>
+													666
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock1">
+														
+													</span>
+													300
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock2">
+														
+													</span>
+													5000
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock3">
+														
+													</span>
+													分享
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+			          </div>
+			          <!-- 第三张 -->
+			          <div class="mui-slider-item bigm">
+			            	<div class="dance mb">
+							<div class="title">
+								资讯
+								<a href="" class="more"></a>
+							</div>
+							<div class="three">
+								<div class="one">
+									<a href="">LET ME LOVE YOU 成品舞分解教学</a>
+								</div>
+								<div class="two">
+									<a href="">
+										<img src="http://zekun.test6.tisapi.com/redp/images/incourse-img.jpg" alt="" />
+									</a>
+								</div>
+								<div class="last">
+									<ul class="four">
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock">
+														
+													</span>
+													666
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock1">
+														
+													</span>
+													300
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock2">
+														
+													</span>
+													5000
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock3">
+														
+													</span>
+													分享
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+			          </div>
+			          <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			          <div class="mui-slider-item mui-slider-item-duplicate">
+			            <div class="dance mb">
+							<div class="title">
+								资讯
+								<a href="" class="more"></a>
+							</div>
+							<div class="three">
+								<div class="one">
+									<a href="">LET ME LOVE YOU 成品舞分解教学</a>
+								</div>
+								<div class="two">
+									<a href="">
+										<img src="http://zekun.test6.tisapi.com/redp/images/incourse-img.jpg" alt="" />
+									</a>
+								</div>
+								<div class="last">
+									<ul class="four">
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock">
+														
+													</span>
+													666
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock1">
+														
+													</span>
+													300
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock2">
+														
+													</span>
+													5000
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<div class="bet">
+													<span class="clock3">
+														
+													</span>
+													分享
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+			          </div>
+			        </div>
+			      
+			      </div>
+	      		<div class="people">
+	      			<div class="best">
+	      				最佳导师
+	      				<a href="" class="small"></a>
+	      			</div>
+	      			<div class="people">
+	      				<div class="mui-scroll-wrapper inport mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+	      				    <div class="mui-scroll mmm">
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor1.jpg" alt="" />
+	      				            			<i>1</i>
+	      				            			<div class="text">
+	      				            				曾大师
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor2.jpg" alt="" />
+	      				            			<i class="mei">2</i>
+	      				            			<div class="text">
+	      				            				软萌妹
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor3.jpg" alt="" />
+	      				            			<i class="mun">3</i>
+	      				            			<div class="text">
+	      				            				米小虫
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor4.jpg" alt="" />
+	      				            			<div class="text">
+	      				            				红网
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor5.jpg" alt="" />
+	      				            			<div class="text">
+	      				            				即兴舞者
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor6.jpg" alt="" />
+	      				            			<div class="text">
+	      				            				舞MINE
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor2.jpg" alt="" />
+	      				            			<div class="text">
+	      				            				红网
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor1.jpg" alt="" />	 
+	      				            			<div class="text">
+	      				            				即兴舞者
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor2.jpg" alt="" />
+	      				            			<div class="text">
+	      				            				舞MINE
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        <div class="mui-control-item zeng">
+	      				            <a href="">
+	      				            		<div class="sweet">
+	      				            			<img src="http://zekun.test6.tisapi.com/redp/images/intutor3.jpg" alt="" />
+	      				            			<div class="text">
+	      				            				舞MINE
+	      				            			</div>
+	      				            		</div>
+	      				            </a>
+	      				            
+	      				        </div>
+	      				        
+	      				    </div>
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<div class="reba">
+	      			<a href="">
+	      				<img src="http://zekun.test6.tisapi.com/redp/images/intutorad.jpg" alt="" />
+	      			</a>
+	      		</div>
+	      		<div class="run">
+	      			<div class="best">
+	      				精品课程
+	      				<a href="" class="small"></a>
+	      			</div>
+	      			<div id="slider" class="mui-slider norma" >
+		      		  <div class="mui-slider-group mui-slider-loop pad ">
+		      		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		      		    <div class="mui-slider-item mui-slider-item-duplicate hot">
+		      		      <a href="#">
+		      		        <div class="all">
+		      			       		<div class="hot_dance">
+		      			       			<a href="">
+		      			       				<img src="http://zekun.test6.tisapi.com/redp/images/incourse1.jpg" alt="" />
+		      			       			</a>
+		      			       		</div>
+		      			       		<div class="dance_des">
+		      			       			Hip Hop初学者全身燃脂健身舞
+		      			       		</div>
+		      			       		<div class="bea_icon">
+		      			       			<div class="last">
+											<ul class="four">
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock">
+																
+															</span>
+															666
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock1">
+																
+															</span>
+															300
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock2">
+																
+															</span>
+															5000
+														</div>
+													</a>
+												</li>
+												
+											</ul>
+									</div>
+		      			       		</div>
+		      			       	</div>
+		      		      </a>
+		      		    </div>
+		      		    <!-- 第一张 -->
+		      		    <div class="mui-slider-item hot">
+		      		      <a href="#">
+		      		        		<div class="all">
+		      			       		<div class="hot_dance">
+		      			       			<a href="">
+		      			       				<img src="http://zekun.test6.tisapi.com/redp/images/incourse1.jpg" alt="" />
+		      			       			</a>
+		      			       		</div>
+		      			       		<div class="dance_des">
+		      			       			Hip Hop初学者全身燃脂健身舞
+		      			       		</div>
+		      			       		<div class="bea_icon">
+		      			       			<div class="last">
+											<ul class="four">
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock">
+																
+															</span>
+															666
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock1">
+																
+															</span>
+															300
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock2">
+																
+															</span>
+															5000
+														</div>
+													</a>
+												</li>
+												
+											</ul>
+									</div>
+		      			       		</div>
+		      			       	</div>
+	
+		      		      </a>
+		      		    </div>
+		      		    <!-- 第二张 -->
+		      		    <div class="mui-slider-item hot">
+		      		      <a href="#">
+		      		        		<div class="all">
+		      			       		<div class="hot_dance">
+		      			       			<a href="">
+		      			       				<img src="http://zekun.test6.tisapi.com/redp/images/incourse3.jpg" alt="" />
+		      			       			</a>
+		      			       		</div>
+		      			       		<div class="dance_des">
+		      			       			Hip Hop初学者全身燃脂健身舞
+		      			       		</div>
+		      			       		<div class="bea_icon">
+		      			       			<div class="last">
+											<ul class="four">
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock">
+																
+															</span>
+															666
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock1">
+																
+															</span>
+															300
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock2">
+																
+															</span>
+															5000
+														</div>
+													</a>
+												</li>
+												
+											</ul>
+									</div>
+		      			       		</div>
+		      			       	</div>
+	
+		      		      </a>
+		      		    </div>
+		      		    <!-- 第三张 -->
+		      		    <div class="mui-slider-item hot">
+		      		      <a href="#">
+		      		        		<div class="all">
+		      			       		<div class="hot_dance">
+		      			       			<a href="">
+		      			       				<img src="http://zekun.test6.tisapi.com/redp/images/incourse2.jpg" alt="" />
+		      			       			</a>
+		      			       		</div>
+		      			       		<div class="dance_des">
+		      			       			Hip Hop初学者全身燃脂健身舞
+		      			       		</div>
+		      			       		<div class="bea_icon">
+		      			       			<div class="last">
+											<ul class="four">
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock">
+																
+															</span>
+															666
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock1">
+																
+															</span>
+															300
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock2">
+																
+															</span>
+															5000
+														</div>
+													</a>
+												</li>
+												
+											</ul>
+									</div>
+		      			       		</div>
+		      			       	</div>
+	
+		      		      </a>
+		      		    </div>
+		      		    <!-- 第四张 -->
+		      		     <div class="mui-slider-item hot">
+		      		      <a href="#">
+		      		        		<div class="all">
+		      			       		<div class="hot_dance">
+		      			       			<a href="">
+		      			       				<img src="http://zekun.test6.tisapi.com/redp/images/incourse3.jpg" alt="" />
+		      			       			</a>
+		      			       		</div>
+		      			       		<div class="dance_des">
+		      			       			Hip Hop初学者全身燃脂健身舞
+		      			       		</div>
+		      			       		<div class="bea_icon">
+		      			       			<div class="last">
+											<ul class="four">
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock">
+																
+															</span>
+															666
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock1">
+																
+															</span>
+															300
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock2">
+																
+															</span>
+															5000
+														</div>
+													</a>
+												</li>
+												
+											</ul>
+									</div>
+		      			       		</div>
+		      			       	</div>
+	
+		      		      </a>
+		      		    </div>
+		      		    
+		      		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		      		    
+		      		    <div class="mui-slider-item mui-slider-item-duplicate hot">
+		      		        <a href="#">
+		      		        		<div class="all">
+		      			       		<div class="hot_dance">
+		      			       			<a href="">
+		      			       				<img src="http://zekun.test6.tisapi.com/redp/images/incourse1.jpg" alt="" />
+		      			       			</a>
+		      			       		</div>
+		      			       		<div class="dance_des">
+		      			       			Hip Hop初学者全身燃脂健身舞
+		      			       		</div>
+		      			       		<div class="bea_icon">
+		      			       			<div class="last">
+											<ul class="four">
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock">
+																
+															</span>
+															666
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock1">
+																
+															</span>
+															300
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" class="no_gang">
+														<div class="bet">
+															<span class="clock2">
+																
+															</span>
+															5000
+														</div>
+													</a>
+												</li>
+												
+											</ul>
+									</div>
+		      			       		</div>
+		      			       	</div>
+		      		        </a>
+		      		    </div>
+		      		  </div>
+	      		  <div class="mui-slider-indicator red_circle bbbest">
+	      		    <div class="mui-indicator mui-active"></div>
+	      		    <div class="mui-indicator"></div>
+	      		    <div class="mui-indicator"></div>
+	      		    <div class="mui-indicator"></div>
+	      		  </div>
+	      		</div>
+	      		</div>
+	      		<div class="footer">	
+	      			<div class="best">
+	      				关于我们
+	      				<a href="" class="small"></a>
+	      			</div>
+	      			<div class="justy">
+	      				<ul>
+	      					<li>
+	      						<a href="">
+	      							<div class="show_pic">
+	      								<img src="http://zekun.test6.tisapi.com/redp/images/inabout1.jpg" alt="" />
+	      							</div>
+	      							<div class="about">
+	      								关于我们
+	      							</div>
+	      						</a>
+	      					</li>
+	      					<li>
+	      						<a href="">
+	      							<div class="show_pic">
+	      								<img src="http://zekun.test6.tisapi.com/redp/images/inabout2.jpg" alt="" />
+	      							</div>
+	      							<div class="about">
+	      								星探登录
+	      							</div>
+	      						</a>
+	      					</li>
+	      				</ul>
+	      			</div>
+	      		</div>	
+	      </div>
+	      
+	      
+	      
+	      
+	    </div>  
+	    <div class="mui-off-canvas-backdrop"></div>
+	  </div>
+	</div>
+	<!--遮罩层-->
+	<div class="hidmask">
+			<div class="openmenu-close">
+				<a href="" class="close" style="display:inline-block;width: 44px;height: 44px;background: url(images/open-close.png)no-repeat center; background-size: 15px 15px; margin-left:2px;"></a>
+			</div>
+			<div class="menu">
+				<div class="news">
+					<p class="title">
+						<a href="">
+							<span>资讯</span>
+						</a>
+					</p>
+				</div>
+				<div class="news">
+					<p class="title">
+						<a href="">
+							<span>红人学堂</span>
+						</a>
+					</p>
+					<div class="list">
+						<ul class="slide">
+							<li>
+								<a href="">精品课程</a>
+							</li>
+							<li>
+								<a href="">VIP课程</a>
+							</li>
+							<li>
+								<a href="">超级VIP课程</a>
+							</li>
+							<li>
+								<a href="">私人订制</a>
+							</li>
+							<li>
+								<a href="">线下预约课</a>
+							</li>
+							<li>
+								<a href="">书籍推荐</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="news">
+					<p class="title">
+						<a href="">
+							<span>问答社区</span>
+						</a>
+					</p>
+					<div class="list">
+						<ul class="slide">
+							<li>
+								<a href="">网络红人</a>
+							</li>
+							<li>
+								<a href="">学堂教员</a>
+							</li>
+							<li>
+								<a href="">网络商业</a>
+							</li>
+							<li>
+								<a href="">时尚造型</a>
+							</li>
+							<li>
+								<a href="">官方提问</a>
+							</li>
+							
+							
+						</ul>
+					</div>
+				</div>
+				<div class="news">
+					<p class="title">
+						<a href="">
+							<span>学堂出品</span>
+						</a>
+					</p>
+					<div class="list">
+						<ul class="slide">
+							<li>
+								<a href="">写真</a>
+							</li>
+							<li>
+								<a href="">视频</a>
+							</li>
+							<li>
+								<a href="">动漫</a>
+							</li>
+							<li>
+								<a href="">音乐</a>
+							</li>
+							<li>
+								<a href="">我要预约</a>
+							</li>
+							<li>
+								<a href="">预约摄影师</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="news">
+					<p class="title">
+						<a href="">
+							<span>关于我们</span>
+						</a>
+					</p>
+					<div class="list">
+						<ul class="slide">
+							<li>
+								<a href="">学堂介绍</a>
+							</li>
+							<li>
+								<a href="">联系我们</a>
+							</li>
+							<li>
+								<a href="">合作平台</a>
+							</li>
+							<li>
+								<a href="">星探登录</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+					<div class="news">
+						<div class="list">
+							<ul class="slide">
+								<li>
+									<a href="">天天福利</a>
+								</li>
+								<li>
+									<a href="">红人直通车</a>
+								</li>
+								<li>
+									<a href="">红人黄页</a>
+								</li>
+								
+							</ul>
+						</div>
+				</div>
+			</div>
+	</div>
+	
+	
+	<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+
+		$.ajax({
+			url:'http://www.hrxtvip.com/api/index/bigarticle.html',
+			type:'GET',
+			dataType:'json',
+			success:function (data) {
+				console.log(data);
+			}
+		});
+		$('.same').click(function(){
+			$('.hidmask').show();
+		})
+		$('.close').click(function(){
+			$('.hidmask').hide();
+		})
+	</script>
 </body>
 </html>

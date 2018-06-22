@@ -1,0 +1,12 @@
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item>i {
+    display: block;
+    width: 1px;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    background: #ddd;
+    position: absolute;
+    top: 15px;
+    left: 75px!important;}
+   .mui-segmented-control.mui-scroll-wrapper .mui-active>i {
+    left: 90px!important;}
